@@ -1,0 +1,17 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <h1>Sentiment Analysis</h1>
+    <form method="POST" action="/">
+        <textarea name="text" rows="4" cols="50" placeholder="Enter your review here"></textarea><br><br>
+        <input type="submit" value="Predict Sentiment">
+    </form>
+    {% if result %}
+    <h2>Predicted Sentiment: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
